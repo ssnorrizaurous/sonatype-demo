@@ -3,7 +3,7 @@ Scripts meant to simplify the standup of IQ-Server and Nexus in Docker.
 
 ## Prerequisites
 These scripts assume the following:
-1. You have docker installed locally
+1. You have Docker installed locally
 2. You have an active internet connection
 3. You have been provided a trial key by Sonatype
 
@@ -33,6 +33,7 @@ docker start <INSERT Nexus Container Name>
 ```
 Note: If you are unsure of the container name use docker ps to see the name of the 
 container based on the bradbeck/nexus-https images
+
 5. Link Nexus to the IQ server container
     1. Login to Nexus at http://localhost:8081
     2. Navigate to Administration 

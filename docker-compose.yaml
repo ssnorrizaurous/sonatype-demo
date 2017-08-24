@@ -1,0 +1,19 @@
+iq-server:
+  #build: iq-server
+  volumes:
+    - ~/iq-data:/sonatype-work
+  ports:
+    - "8070:8070"
+    - "8071:8071"
+  image: jswank/iq-server
+nexus:
+  #build: nexus
+  volumes:
+    - ~/nexus-data:/nexus-data
+    - ~/nexus-ssl:/opt/sonatype/nexus/etc/ssl
+  ports:
+    - "8081:8081"
+    - "8443:8443"
+  image: bradbeck/nexus-https
+  links:
+  - iq-server:iq-server
