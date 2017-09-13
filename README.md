@@ -28,11 +28,9 @@ These scripts assume the following:
     5. Select Install > Locate License and Upload > Accept User Agreement  
 4. Restart Nexus to enable pro features (to include IQ integration). 
 ```bash
-docker stop <INSERT Nexus Container Name>
-docker start <INSERT Nexus Container Name>
+docker stop nexus3
+docker start nexus3
 ```
-Note: If you are unsure of the container name use docker ps to see the name of the 
-container based on the bradbeck/nexus-https images
 
 5. Link Nexus to the IQ server container
     1. Login to Nexus at http://localhost:8081
