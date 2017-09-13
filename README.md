@@ -5,7 +5,7 @@ Scripts meant to simplify the standup of IQ-Server and Nexus in Docker.
 These scripts assume the following:
 1. You have Docker installed locally
 2. You have an active internet connection
-3. You have been provided a trial key by Sonatype
+3. You have been provided a license key by Sonatype
 
 ## Setup
 1. Run demo-setup.sh
