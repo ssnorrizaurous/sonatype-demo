@@ -6,6 +6,7 @@ iq-server:
     - "8070:8070"
     - "8071:8071"
   image: jswank/iq-server
+  container_name: iq-server
 nexus:
   #build: nexus
   volumes:
@@ -19,3 +20,4 @@ nexus:
   image: bradbeck/nexus-https
   links:
   - iq-server:iq-server
+  container_name: nexus3
