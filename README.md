@@ -46,4 +46,4 @@ container based on the bradbeck/nexus-https images
         5. Set password to **admin123**
         6. Verify Connection
         7. If you verify your connection successfully, select save
-6. If you wish to run Nexus over ssl...
+
