@@ -5,7 +5,7 @@ iq-server:
   ports:
     - "8070:8070"
     - "8071:8071"
-  image: jswank/iq-server
+  image: cmyanko/demo-iq-server
   container_name: iq-server
 nexus:
   #build: nexus
